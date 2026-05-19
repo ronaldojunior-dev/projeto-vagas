@@ -86,8 +86,8 @@ function analisarCandidato(candidato) {
         console.log(`Cargo: ${resultado.cargo}`);
         console.log(`Compatibilidade: ${resultado.compatibilidade}%`);
         console.log(`Classificação: ${resultado.classificacao}`);
-        console.log(`Habilidades encontradas: ${resultado.habilidadesEncontradas.join(", ")}`);
-        console.log(`Habilidades faltantes: ${resultado.habilidadesFaltantes.join(", ")}`);
+        console.log(`Habilidades : ${resultado.habilidadesEncontradas.join(", ")}`);
+        console.log(`Habilidades Necessárias: ${resultado.habilidadesFaltantes.join(", ")}`);
         console.log("---------------------------------------------------");
     });
 
@@ -106,7 +106,7 @@ function exibirRecomendacoes(candidato, melhorVaga) {
 Recomendações para ${candidato.nome}:
 `);
 
-    if (melhorVaga.habilidadesFaltantes.length > 0) {
+if (melhorVaga.habilidadesFaltantes.length > 0) {
 
         console.log(`
 Priorize estudar:
