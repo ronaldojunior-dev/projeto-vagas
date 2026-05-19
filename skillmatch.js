@@ -96,6 +96,8 @@ function analisarCandidato(candidato) {
     );
 
     console.log(`\n=====================================\nVAGA MAIS COMPATÍVEL\n=====================================\n${melhorVaga.cargo}\nCompatibilidade: ${melhorVaga.compatibilidade}%\n`);
+
+    exibirRecomendacoes(candidato, melhorVaga);
 }
 
 candidatos.forEach(analisarCandidato);
@@ -103,19 +105,17 @@ candidatos.forEach(analisarCandidato);
 function exibirRecomendacoes(candidato, melhorVaga) {
 
     console.log(`
-Recomendações para ${candidato.nome}:
+=== RECOMENDAÇÕES PARA ${candidato.nome} ===
+Melhor vaga: ${melhorVaga.cargo} (${melhorVaga.compatibilidade}%)
 `);
 
-if (melhorVaga.habilidadesFaltantes.length > 0) {
-
+    if (melhorVaga.habilidadesFaltantes.length > 0) {
         console.log(`
 Priorize estudar:
 
 - ${melhorVaga.habilidadesFaltantes.join("\n- ")}
 `);
-
     } else {
-
         console.log(`
 Parabéns!
 
@@ -123,24 +123,22 @@ Você atende todos os requisitos.
 `);
     }
 
-    finalizarAnalise(
-        candidato.nome,
-        exibirMensagemFinal
-    );
+    finalizarAnalise(candidato.nome, exibirMensagemFinal);
 }
 
-
 function finalizarAnalise(nomeCandidato, callback) {
-
     console.log(`
-Análise finalizada.
+Finalizando análise para ${nomeCandidato}...
 `);
+    console.log(`Análise finalizada.`);
 
     callback(nomeCandidato);
 }
 
 function exibirMensagemFinal(nome) {
-
+    console.log(`
+Exibindo mensagem final para ${nome}...
+`);
     console.log(`
 ${nome},
 continue evoluindo suas habilidades!
