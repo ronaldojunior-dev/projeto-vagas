@@ -2,8 +2,19 @@
 
 ## Sobre o projeto
 
-O medidor consiste em pegar as habilidades dos candidatos e ver se a vaga
-é compatível ou não com suas habilidades e a porcentagem que aquele candidato 
-é compatível.
+O SkillMatch JS é um sistema desenvolvido em JavaScript puro com o objetivo de simular um processo de triagem técnica utilizado por empresas de tecnologia.
+
+A aplicação compara as habilidades dos candidatos com os requisitos das vagas cadastradas, calculando automaticamente o percentual de compatibilidade entre o perfil profissional e a vaga desejada.
+
+O projeto foi desenvolvido com foco em:
+
+- lógica de programação;
+- manipulação de arrays;
+- Programação Orientada a Objetos (POO);
+- métodos de array;
+- callbacks;
+- herança;
+- organização de código.
+
 
 acesso ao trello: https://trello.com/b/qu3NGXz9
