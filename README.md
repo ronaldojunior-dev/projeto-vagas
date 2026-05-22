@@ -18,3 +18,5 @@ O projeto foi desenvolvido com foco em:
 
 
 acesso ao trello: https://trello.com/b/qu3NGXz9
+
+acesso ao GitHub: https://github.com/ronaldojunior-dev/projeto-vagas.git
